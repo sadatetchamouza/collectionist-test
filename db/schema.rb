@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2021_04_15_171226) do
     t.integer "day_of_week"
     t.time "start_at"
     t.time "end_at"
-    t.time "pause_start_at"
-    t.time "pause_end_at"
+    t.time "second_start_at"
+    t.time "second_end_at"
     t.bigint "shop_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

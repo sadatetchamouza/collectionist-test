@@ -1,0 +1,289 @@
+<h3>Send your booking</h3>
+
+<%= form_with url: shops_path, local:true do |f| %>
+
+<div>
+    <label for="">Nom de la boutique</label>
+    <input type="text" name="name" />
+</div><br>
+
+<div>
+<input value=1 name="days[]" hidden=true>Lundi</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+    <select name="second_fromM[]"  id="fromM">
+        <option value=":00" selected>:00</option>
+        <option value=":15">:15</option>
+        <option value=":30">:30</option>
+        <option value=":45">:45</option>
+    </select>
+    <label>to</label>
+    <%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+    <select name="second_toM[]"  id="toM">
+        <option value=":00" selected>:00</option>
+        <option value=":15">:15</option>
+        <option value=":30">:30</option>
+        <option value=":45">:45</option>
+    </select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=2 name="days[]" hidden=true>Mardi:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=3 name="days[]" hidden=true>Mercredi:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=4 name="days[]" hidden=true>Jeudi:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=5 name="days[]" hidden=true>Vendredi:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=6 name="days[]" hidden=true>Samedi:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+
+<div>
+<input value=7 name="days[]" hidden=true>Dimanche:</input>
+<%= f.select "start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label for="">And</label>
+<%= f.select "second_start_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_fromM[]"  id="fromM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<label>to</label>
+<%= f.select "second_end_at[]", options_for_select(hours.collect { |h| [h, h] }), {id: 'booking', required: true} %>
+<select name="second_toM[]"  id="toM">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Closed</span>
+</div>
+  <%= f.submit "Submit" %>
+<% end %>
+
+<script type="text/javascript">
+    $(document).ready(function (){
+        $('input').change( function() { 
+            if($(this).filter(':checked').val() == "closed") {
+                $(this).siblings('select').hide();
+                //$(this).siblings('input').attr('disabled', true);
+            } else {
+                $(this).siblings('select').show();
+                //$(this).siblings('input').attr('disabled', true);
+            }
+        });
+
+        $('.add_creneau').on('click', function () {
+            $(this).siblings('.second_creneau').removeClass('.d-none')
+        })
+    })
+</script>
