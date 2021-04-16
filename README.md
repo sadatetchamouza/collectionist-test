@@ -1,24 +1,17 @@
-# README
+#Stack
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 6
 
-Things you may want to cover:
+Ruby v2.6.0
 
-* Ruby version
+Seed request to insert data
 
-* System dependencies
+$ rails db:create
 
-* Configuration
+$ rails db:migrate
 
-* Database creation
+$ rails db:seed
 
-* Database initialization
+To test :
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+go to the root_page (http://localhost::3000)
